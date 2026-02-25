@@ -1,0 +1,59 @@
+/* Furnistør – legacy styles preserved from original style.css */
+/* .container-custom is defined in index.css with responsive padding */
+
+.white-container {
+  width: 100%;
+  background-color: #fff;
+}
+
+.container-white {
+  background-color: #fff;
+}
+
+.underline-hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0.5px;
+  background-color: #cf5600;
+  transition: width 0.3s ease-out;
+}
+.underline-hover:hover::after {
+  width: 100%;
+}
+
+.active-link a {
+  text-decoration: underline !important;
+  color: #cf5600 !important;
+}
+
+.shop-room-title,
+.section-title,
+.category-box-title {
+  font-size: 52px;
+  font-family: "Fraunces", serif;
+  color: #111;
+  font-weight: 300;
+}
+
+.product-tag {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #fff;
+  color: #fc6b00;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 2px;
+  z-index: 10;
+  text-transform: uppercase;
+  border: 1px solid #fc6b00;
+}
+
+.scroll-to-top-button.show {
+  opacity: 1;
+  pointer-events: auto;
+}

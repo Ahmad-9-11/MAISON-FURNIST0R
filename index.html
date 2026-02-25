@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Heebo:wght@100..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Heebo:wght@100..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <!-- /* ---------------------------------- */ -->
+    <!-- /* --- UPPER NAVE --- */ -->
+    <!-- /* ---------------------------------- */ -->
+    <div class="upper-nav">
+      <div>
+        <p class="upper-offer">Free shipping on orders above 150€</p>
+      </div>
+      <div class="menuu">
+        <ul class="upper-menu underline-on-hover-container">
+          <li><a> Warranty </a></li>
+          <li><a> Shipping </a></li>
+          <li><a class="right-border"> Wishlist </a></li>
+          <li><a class="right-border"> Login </a></li>
+        </ul>
+        <div class="upper-input">
+          <input class="upper-search" placeholder="Search site..." />
+          <svg
+            class="search-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="23" y1="23" x2="16.65" y2="16.65"></line>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- /* ---------------------------------- */ -->
+    <!-- /* --- MAIN NAVBAR --- */ -->
+    <!-- /* ---------------------------------- */ -->
+    <div class="lower-navbar">
+      <nav class="navbar">
+        <div class="logo">
+          <a>Furnistør</a>
+
+          <div class="hamburger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+
+        <ul class="menu underline-on-hover-container">
+          <li class="active-link"><a href="#">Home</a></li>
+          <li class="has-dropdown">
+            <a href="#">Products</a>
+            <div class="products-dropdown">
+              <div class="dropdown-container">
+                <div class="dropdown-col">
+                  <h4>Living Room</h4>
+                  <ul>
+                    <li><a href="#">Armchairs</a></li>
+                    <li><a href="#">Coffee Tables</a></li>
+                    <li><a href="#">Sideboards</a></li>
+                    <li><a href="#">Sofas</a></li>
+                  </ul>
+                  <h4 class="mt-4">Dining Room</h4>
+                  <ul>
+                    <li><a href="#">Benches</a></li>
+                    <li><a href="#">Dining Chairs</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown-col">
+                  <h4>Bedroom</h4>
+                  <ul>
+                    <li><a href="#">Beds</a></li>
+                    <li><a href="#">Nightstands</a></li>
+                    <li><a href="#">Wardrobes</a></li>
+                  </ul>
+                  <h4 class="mt-4">Home Decor</h4>
+                  <ul>
+                    <li><a href="#">Mirrors</a></li>
+                    <li><a href="#">Rugs</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown-col">
+                  <h4>Lighting</h4>
+                  <ul>
+                    <li><a href="#">Ceiling</a></li>
+                    <li><a href="#">Floor Lamps</a></li>
+                    <li><a href="#">Table Lamps</a></li>
+                    <li><a href="#">Wall Lamps</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown-col">
+                  <h4>Outdoor</h4>
+                  <ul>
+                    <li>
+                      <a class="underline-on-hover" href="#">Accessories</a>
+                    </li>
+                    <li><a class="underline-on-hover" href="#">Chairs</a></li>
+                    <li><a class="underline-on-hover" href="#">Benches</a></li>
+                    <li><a class="underline-on-hover" href="#">Lounge</a></li>
+                    <li><a class="underline-on-hover" href="#">Tables</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown-image-block img-block-1">
+                  <img
+                    src="https://sites.kaliumtheme.com/elementor/furniture/wp-content/uploads/2025/05/pet-rug-1-500x666.jpeg"
+                    alt="Just In"
+                  />
+                  <h3 class="latest">Just In</h3>
+                </div>
+                <div class="dropdown-image-block">
+                  <img
+                    src="https://sites.kaliumtheme.com/elementor/furniture/wp-content/uploads/2025/05/aluminium-lounge-chair-2-500x666.jpeg"
+                    alt="Outlet"
+                  />
+                  <h3 class="latest">Outlet</h3>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Journal</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <!-- /* ---------------------------------- */ -->
+        <!-- /* --- MAIN CART --- */ -->
+        <!-- /* ---------------------------------- */ -->
+      </nav>
+      <div class="cart-container">
+        <p>Cart</p>
+        <!-- <i class="fas fa-shopping-cart"></i> -->
+        <svg
+          class="shopping-cart"
+          xmlns="http://www.w3.org/2000/svg"
+          width="200"
+          height="200"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill="currentColor"
+            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
+          />
+        </svg>
+        <span class="cart-count">0</span>
+      </div>
+
+      <!-- Cart Popup -->
+      <div class="cart-popup" id="cart-popup">
+        <div>
+          <div class="carts-length">
+            <h3>Your cart (1 item)</h3>
+            <button id="close-cart">
+              <svg
+                class="close-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 72 72"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-miterlimit="10"
+                  stroke-width="3"
+                  d="m17.5 17.5l37 37m0-37l-37 37"
+                />
+              </svg>
+            </button>
+          </div>
+          <div id="cart-items"></div>
+          <div class="empty-cart-message-container">
+            <div class="empty-cart-message">
+              <div class="empty-message">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="200"
+                  height="200"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="1.5"
+                  >
+                    <path d="m15 11l1 6m-7-6l-1 6M9 6V5a3 3 0 1 1 6 0v1" />
+                    <path
+                      d="M20.224 12.526c-.586-3.121-.878-4.682-1.99-5.604C17.125 6 15.537 6 12.36 6h-.72c-3.176 0-4.764 0-5.875.922c-1.11.922-1.403 2.483-1.989 5.604c-.823 4.389-1.234 6.583-.034 8.029C4.942 22 7.174 22 11.639 22h.722c4.465 0 6.698 0 7.897-1.445c.696-.84.85-1.93.696-3.555"
+                    />
+                  </g>
+                </svg>
+                <div>
+                  <p class="currently-empty">Your cart is currently empty</p>
+                  <p class="browse">
+                    Browse our store, find products, and happy shopping!
+                  </p>
+                </div>
+                <button>Browse products</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lower-part">
+          <div class="progress-bar-container">
+            <div class="progress-bar-lines"></div>
+          </div>
+          <p class="free-shipping-offer">
+            Free shipping will be applied at checkout!
+          </p>
+          <div class="total">
+            <p>Subtotal</p>
+            <span>$Price</span>
+          </div>
+          <p class="expenses">
+            Shipping, taxes, and discounts calculated at checkout.
+          </p>
+          <div class="buttons">
+            <button class="white">Viewchart</button>
+            <button class="black">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /* ---------------------------------- */ -->
+    <!-- /* --- MOBILE NAV --- */ -->
+    <!-- /* ---------------------------------- */ -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="close" id="closeBtn"><i class="fas fa-times"></i></div>
+      <ul class="mob-links">
+        <li><a class="active-link" href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Journal</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <!-- /* ---------------------------------- */ -->
+    <!-- /* --- HERO SECTION --- */ -->
+    <!-- /* ---------------------------------- */ -->
+    <section class="hero">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="Public/backgroundVideo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <h1>Modern living, timeless design</h1>
+        <p>
+          Explore our curated selection of handcrafted furniture and home
+          accessories, rooted in Scandinavian simplicity and built to last.
+        </p>
+        <button class="hero-btn">
+          Explore Now
+          <span class="right-arrow"
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="2"
+              >
+                <path stroke-miterlimit="10" d="M20 12H4" />
+                <path
+                  stroke-linejoin="round"
+                  d="m12.968 19.66l6.572-6.572a1.53 1.53 0 0 0 0-2.176L12.968 4.34"
+                />
+              </g></svg
+          ></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- /* ---------------------------------- */ -->
+    <!-- /* --- SHOP ROOM --- */ -->
+    <!-- /* ---------------------------------- */ -->
+    <div class="container">
+      <h2 class="shop-room-title">Shop by room</h2>
+      <div class="shop-room">
+        <div class="shop-room-box">
+          <img
+            class="shop-room-image"
+            src="https://sites.kaliumtheme.com/elementor/furniture/wp-content/uploads/2025/05/high-back-lounge-armchair-4-500x666.jpg"
+          />
+          <p class="shop-room-name">Living Room</p>
+        </div>
+        <div class="shop-room-box">
+          <img
+            class="shop-room-image"
+            src="https://sites.kaliumtheme.com/elementor/furniture/wp-content/uploads/2025/05/double-fabric-bed-3-500x666.jpg"
+          />
+          <p class="shop-room-name">Bed Room</p>
+        </div>
+        <div class="shop-room-box">
+          <img
+            class="shop-room-image"
+            src="https://sites.kaliumtheme.com/elementor/furniture/wp-content/uploads/2025/05/stackist-12-500x666.jpg"
+          />
+          <p class="shop-room-name">Dining Room</p>
+        </div>
+        <div class="shop-room-box">
+          <img
+            class="shop-room-image"
+            src="https://sites.kaliumtheme.com/elementor/furniture/wp-content/uploads/2025/05/check-wool-5-500x666.jpeg"
+          />
+          <p class="shop-room-name">Home Decore</p>
+        </div>
+        <div class="shop-room-box">
+          <img
+            class="shop-room-image"
+            src="https://sites.kaliumtheme.com/elementor/furniture/wp-content/uploads/2025/04/luna-floor-lamp-2-500x666.jpg"
+          />
+          <p class="shop-room-name">Lighting</p>
+        </div>
+        <div class="shop-room-box">
+          <img
+            class="shop-room-image"
+            src="https://sites.kaliumtheme.com/elementor/furniture/wp-content/uploads/2025/05/round-steel-garden-table-13-500x666.jpg"
+          />
+          <p class="shop-room-name">Outdoor</p>
+        </div>
+      </div>
+    </div>
+    <!-- /* ---------------------------------- */ -->
+    <!-- /* --- MARKETING SECTION --- */ -->
+    <!-- /* ---------------------------------- */ -->
+    <div class="container">
+      <div class="marketing-section">
+        <div class="marketing">
+          <img
+            class="marketing-image"
+            src="https://sites.kaliumtheme.com/elementor/furniture/wp-content/uploads/2025/05/terracotta-vase-12.jpg"
+          />
+          <div class="marketing-col">
+            <h2 class="marketing-title">The Art of Furniture Making</h2>
+            <p class="marketing-description">
+              Every Furnistør piece begins with a simple belief: exceptional
+              furniture requires exceptional care. Our artisans spend years
+              perfecting their craft, ensuring that each table, chair, and
+              cabinet meets the exacting standards that have defined
+              Scandinavian design for generations.
+            </p>
+            <p class="marketing-description-one">
+              The result? Furniture that improves with age, grows more beautiful
+              with time, and becomes an integral part of your home’s story.
+            </p>
+          </div>
+        </div>
+        <div class="marketing marketing-col-two">
+          <div class="marketing-col">
+            <h2 class="marketing-title">Made with Care for a Cleaner Future</h2>
+            <p class="marketing-description">
+              At Furnistør, we prioritize eco-friendly materials and ethical
+              production practices in every aspect of our business. Our
+              unwavering commitment to sustainability ensures that every piece
+              of furniture we create is not only beautiful and stylish but also
+              made with a sense of responsibility towards the environment.
+            </p>
+            <p class="marketing-description-two">
+              We believe that our choices impact the planet, and we strive to
+              make a positive difference through our high-quality designs. By
+              selecting sustainable resources and promoting fair trade, we aim
+              to deliver products that our customers can feel proud to own.
+            </p>
+          </div>
+          <img
+            class="marketing-image"
+            src="https://sites.kaliumtheme.com/elementor/furniture/wp-content/uploads/2025/05/terracotta-vase-9.jpg"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- /* ---------------------------------- */ -->
+    <!-- /* --- OUR MAIN PRODUCTS --- */ -->
+    <!-- /* ---------------------------------- */ -->
+    <div class="container">
+      <h2 class="section-title">Explore products</h2>
+
+      <!-- JS will insert all products here -->
+      <div id="products-row1" class="products-grid"></div>
+
+      <!-- Second row -->
+      <div id="products-row2" class="products-grid"></div>
+    </div>
+    <!-- /* ---------------------------------- */ -->
+    <!-- /* --- LONGUE SECTION --- */ -->
+    <!-- /* ---------------------------------- */ -->
+    <div class="longue">
+      <div class="longue-container">
+        <div class="longue-images">
+          <div class="longue-image">
+            <img
+              src="https://sites.kaliumtheme.com/elementor/furniture/wp-content/uploads/2025/05/upholstered-3-768x1151.jpg"
+            />
+          </div>
+          <div class="longue-image">
+            <img
+              src="https://sites.kaliumtheme.com/elementor/furniture/wp-content/uploads/2025/05/upholstered-8-768x1152.jpg"
+            />
+          </div>
+        </div>
+        <div class="longue-content">
+          <h3 class="longue-title">The Lounge Edit</h3>
+          <p class="longue-description">
+            Unwind in style. Discover our handpicked selection of sofas, lounge
+            chairs, and coffee tables designed for effortless comfort and
+            timeless appeal.
+          </p>
+          <button class="longue-button">Shop Collection</button>
+        </div>
+      </div>
+    </div>
+    <!-- /* ---------------------------------- */ -->
+    <!-- /* --- CATEGORY SECTION --- */ -->
+    <!-- /* ---------------------------------- */ -->
+    <div class="white-container">
+      <div class="container container-white">
+        <h3 class="category-box-title">Shop by category</h3>
+        <div class="shop-category">
+          <div class="shop-room-box category-box">
+            <img
+              class="shop-room-image"
+              src="https://sites.kaliumtheme.com/elementor/furniture/wp-content/uploads/2025/05/untitled-throw-1-500x666.jpg"
+            />
+            <p class="shop-room-name">Textiles</p>
+          </div>
+          <div class="shop-room-box category-box">
+            <img
+              class="shop-room-image"
+              src="https://sites.kaliumtheme.com/elementor/furniture/wp-content/uploads/2025/05/cement-garden-table-10-500x666.jpeg"
+            />
+            <p class="shop-room-name">Tables</p>
+          </div>
+          <div class="shop-room-box category-box">
+            <img
+              class="shop-room-image"
+              src="https://sites.kaliumtheme.com/elementor/furniture/wp-content/uploads/2025/05/apollo-17-500x666.jpg"
+            />
+            <p class="shop-room-name">Table Lamps</p>
+          </div>
+          <div class="shop-room-box category-box">
+            <img
+              class="shop-room-image"
+              src="https://sites.kaliumtheme.com/elementor/furniture/wp-content/uploads/2025/05/compact-boucle-sofa-11-500x666.jpeg"
+            />
+            <p class="shop-room-name">Sofas</p>
+          </div>
+          <div class="shop-room-box category-box">
+            <img
+              class="shop-room-image"
+              src="https://sites.kaliumtheme.com/elementor/furniture/wp-content/uploads/2025/05/high-back-lounge-armchair-5-500x666.jpg"
+            />
+            <p class="shop-room-name">Dining Chairs</p>
+          </div>
+          <div class="shop-room-box category-box">
+            <img
+              class="shop-room-image"
+              src="https://sites.kaliumtheme.com/elementor/furniture/wp-content/uploads/2025/05/upholstered-storage-bed-4-500x666.jpg"
+            />
+            <p class="shop-room-name">Beds</p>
+          </div>
+        </div>
+        <!-- /* ---------------------------------- */ -->
+        <!-- /* --- FEATURE HEADING --- */ -->
+        <!-- /* ---------------------------------- */ -->
+        <div class="features-container">
+          <div class="feature">
+            <!-- Free Shipping -->
+            <svg
+              class="feature-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                class="svg-class"
+                fill="currentColor"
+                d="M5.5 14a2.5 2.5 0 0 1 2.45 2H15V6H4a2 2 0 0 0-2 2v8h1.05a2.5 2.5 0 0 1 2.45-2m0 5a2.5 2.5 0 0 1-2.45-2H1V8a3 3 0 0 1 3-3h11a1 1 0 0 1 1 1v2h3l3 4v5h-2.05a2.5 2.5 0 0 1-4.9 0h-7.1a2.5 2.5 0 0 1-2.45 2m0-4A1.5 1.5 0 0 0 4 16.5A1.5 1.5 0 0 0 5.5 18A1.5 1.5 0 0 0 7 16.5A1.5 1.5 0 0 0 5.5 15m12-1a2.5 2.5 0 0 1 2.45 2H21v-3.68l-.24-.32H16v2.5c.42-.31.94-.5 1.5-.5m0 1a1.5 1.5 0 0 0-1.5 1.5a1.5 1.5 0 0 0 1.5 1.5a1.5 1.5 0 0 0 1.5-1.5a1.5 1.5 0 0 0-1.5-1.5M16 9v2h4l-1.5-2H16Z"
+              />
+            </svg>
+            <p class="feature-title">Free Shipping</p>
+            <p class="feature-text">
+              Enjoy complimentary shipping on all orders over €150 across
+              Europe.
+            </p>
+          </div>
+
+          <div class="feature">
+            <!-- Made in Denmark -->
+
+            <svg
+              class="feature-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="200"
+              height="200"
+              viewBox="0 0 24 24"
+            >
+              <g fill="none" stroke="currentColor">
+                <path
+                  d="m19.5 6l-1.467 1.1a2 2 0 0 1-1.2.4h-3.358a1.578 1.578 0 0 0-.999 2.799l2 1.636a6 6 0 0 1 2.164 5.306l-.02.18a8.002 8.002 0 0 1-.523 2.087L15.5 21m-13-10.5l3.238-.54a2 2 0 0 1 2.302 2.302l-.135.807a3.337 3.337 0 0 0 1.8 3.533a2.503 2.503 0 0 1 1.308 2.846L10.5 21.5"
+                />
+                <circle cx="12" cy="12" r="9.5" />
+              </g>
+            </svg>
+            <p class="feature-title">Made in Denmark</p>
+            <p class="feature-text">
+              Our products are proudly crafted in Denmark, ensuring authenticity
+              and quality.
+            </p>
+          </div>
+
+          <div class="feature">
+            <!-- Sustainable -->
+
+            <svg
+              class="feature-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="200"
+              height="200"
+              viewBox="0 0 24 24"
+            >
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                color="currentColor"
+              >
+                <path
+                  d="M7.646 15.71A6 6 0 0 1 7 13c0-3.215 2.5-5.5 6-6c4.082-.583 5.833-2.833 7-4c3.5 13-3 16-7 16a6 6 0 0 1-3-.803"
+                />
+                <path
+                  d="M3 21c.5-3 2.458-4.864 7-6c3.217-.804 5.463-2.82 7-4.945"
+                />
+              </g>
+            </svg>
+            <p class="feature-title">Sustainable</p>
+            <p class="feature-text">
+              Each item is handcrafted by skilled artisans, reflecting our
+              dedication to craftsmanship.
+            </p>
+          </div>
+
+          <div class="feature">
+            <!-- Handcrafted -->
+
+            <svg
+              class="feature-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="200"
+              height="200"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+                d="M277.42 247a24.7 24.7 0 0 0-4.08-5.47L255 223.44a21.6 21.6 0 0 0-6.56-4.57a20.93 20.93 0 0 0-23.28 4.27c-6.36 6.26-18 17.68-39 38.43C146 301.3 71.43 367.89 37.71 396.29a16 16 0 0 0-1.09 23.54l39 39.43a16.13 16.13 0 0 0 23.67-.89c29.24-34.37 96.3-109 136-148.23c20.39-20.06 31.82-31.58 38.29-37.94a21.76 21.76 0 0 0 3.84-25.2m201.01-46l-34.31-34a5.44 5.44 0 0 0-4-1.59a5.6 5.6 0 0 0-4 1.59h0a11.41 11.41 0 0 1-9.55 3.27c-4.48-.49-9.25-1.88-12.33-4.86c-7-6.86 1.09-20.36-5.07-29a243 243 0 0 0-23.08-26.72c-7.06-7-34.81-33.47-81.55-52.53a123.8 123.8 0 0 0-47-9.24c-26.35 0-46.61 11.76-54 18.51c-5.88 5.32-12 13.77-12 13.77a91 91 0 0 1 10.81-3.2a79.5 79.5 0 0 1 23.28-1.49C241.19 76.8 259.94 84.1 270 92c16.21 13 23.18 30.39 24.27 52.83c.8 16.69-15.23 37.76-30.44 54.94a7.85 7.85 0 0 0 .4 10.83l21.24 21.23a8 8 0 0 0 11.14.1c13.93-13.51 31.09-28.47 40.82-34.46s17.58-7.68 21.35-8.09a35.7 35.7 0 0 1 21.3 4.62a13.7 13.7 0 0 1 3.08 2.38c6.46 6.56 6.07 17.28-.5 23.74l-2 1.89a5.5 5.5 0 0 0 0 7.84l34.31 34a5.5 5.5 0 0 0 4 1.58a5.65 5.65 0 0 0 4-1.58L478.43 209a5.82 5.82 0 0 0 0-8"
+              />
+            </svg>
+            <p class="feature-title">Handcrafted</p>
+            <p class="feature-text">
+              We prioritize eco-friendly materials and sustainable practices in
+              all our designs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /* ---------------------------------- */ -->
+    <!-- /* --- JOURNAL SECTION --- */ -->
+    <!-- /* ---------------------------------- */ -->
+    <div class="container">
+      <div class="journal-header">
+        <h3>From our journal</h3>
+        <button>View More <span>&rarr;</span></button>
+      </div>
+      <div class="journal-boxes">
+        <div class="journal-box">
+          <div class="journal-image-box">
+            <img
+              class="journal-image"
+              src="https://sites.kaliumtheme.com/elementor/furniture/wp-content/uploads/2025/05/compact-boucle-sofa-11.jpeg"
+            />
+          </div>
+          <div class="journal-content">
+            <a class="journal-link" src="#"
+              >Why fewer, better pieces still matter</a
+            >
+            <p class="journal-date">Jul 8, 2025</p>
+          </div>
+        </div>
+        <div class="journal-box">
+          <div class="journal-image-box">
+            <img
+              class="journal-image"
+              src="https://sites.kaliumtheme.com/elementor/furniture/wp-content/uploads/2025/05/pet-rug-6.jpeg"
+            />
+          </div>
+          <div class="journal-content">
+            <a class="journal-link" src="#"
+              >Corners, curves, and the geometry of calm</a
+            >
+            <p class="journal-date">Jul 8, 2025</p>
+          </div>
+        </div>
+        <div class="journal-box">
+          <div class="journal-image-box">
+            <img
+              class="journal-image"
+              src="https://sites.kaliumtheme.com/elementor/furniture/wp-content/uploads/2025/05/sunao-vase-13-819x1024.jpeg"
+            />
+          </div>
+          <div class="journal-content">
+            <a class="journal-link" src="#">Soft light, hard edges</a>
+            <p class="journal-date">Jul 8, 2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /* ---------------------------------- */ -->
+    <!-- /* --- FREQUENTLY ASKED QUESTIONS --- */ -->
+    <!-- /* ---------------------------------- */ -->
+    <div class="white-container">
+      <div class="container container-white">
+        <div class="faq">
+          <p class="faq-heading">Frequently Asked <em>Questions</em></p>
+          <div class="faq-questions">
+            <div class="faq-modal">
+              <p class="faq-question">What are the Shipping Options?</p>
+              <span class="faq-toggle"
+                ><svg
+                  class="plus-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 15 15"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M8 2.75a.5.5 0 0 0-1 0V7H2.75a.5.5 0 0 0 0 1H7v4.25a.5.5 0 0 0 1 0V8h4.25a.5.5 0 0 0 0-1H8V2.75Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We offer various shipping options to ensure your order arrives
+                safely and promptly. Standard shipping typically takes 5-7
+                business days, while express options are available for faster
+                delivery. You can choose your preferred method at checkout.
+              </p>
+            </div>
+
+            <div class="faq-modal">
+              <p class="faq-question">What is your return policy?</p>
+              <span class="faq-toggle"
+                ><svg
+                  class="plus-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 15 15"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M8 2.75a.5.5 0 0 0-1 0V7H2.75a.5.5 0 0 0 0 1H7v4.25a.5.5 0 0 0 1 0V8h4.25a.5.5 0 0 0 0-1H8V2.75Z"
+                    clip-rule="evenodd"
+                  /></svg
+              ></span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We want you to love your purchase! If you’re not satisfied, you
+                can return items within 30 days for a full refund. Please ensure
+                products are in their original condition and packaging.
+              </p>
+            </div>
+
+            <div class="faq-modal">
+              <p class="faq-question">How do I care?</p>
+              <span class="faq-toggle"
+                ><svg
+                  class="plus-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 15 15"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M8 2.75a.5.5 0 0 0-1 0V7H2.75a.5.5 0 0 0 0 1H7v4.25a.5.5 0 0 0 1 0V8h4.25a.5.5 0 0 0 0-1H8V2.75Z"
+                    clip-rule="evenodd"
+                  /></svg
+              ></span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                To maintain the beauty of your furniture, we recommend regular
+                dusting and using a damp cloth for spills. Avoid harsh chemicals
+                that can damage finishes. For specific materials, refer to the
+                care instructions included with your purchase.
+              </p>
+            </div>
+            <div class="faq-modal">
+              <p class="faq-question">Do you offer warranties?</p>
+              <span class="faq-toggle"
+                ><svg
+                  class="plus-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 15 15"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M8 2.75a.5.5 0 0 0-1 0V7H2.75a.5.5 0 0 0 0 1H7v4.25a.5.5 0 0 0 1 0V8h4.25a.5.5 0 0 0 0-1H8V2.75Z"
+                    clip-rule="evenodd"
+                  /></svg
+              ></span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes, many of our products come with a warranty that covers
+                manufacturing defects. The length and terms of the warranty vary
+                by item, so please check the product details for specific
+                information. If you have questions, feel free to reach out.
+              </p>
+            </div>
+            <div class="faq-modal">
+              <p class="faq-question">Can I track my order?</p>
+              <span class="faq-toggle"
+                ><svg
+                  class="plus-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 15 15"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M8 2.75a.5.5 0 0 0-1 0V7H2.75a.5.5 0 0 0 0 1H7v4.25a.5.5 0 0 0 1 0V8h4.25a.5.5 0 0 0 0-1H8V2.75Z"
+                    clip-rule="evenodd"
+                  /></svg
+              ></span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Absolutely! Once your order has shipped, you will receive an
+                email with tracking information. You can use this link to
+                monitor your shipment’s progress until it arrives at your
+                doorstep.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /* ---------------------------------- */ -->
+    <!-- /* --- FEEDBACK --- */ -->
+    <!-- /* ---------------------------------- */ -->
+    <div class="feedback">
+      <div class="feedback-container">
+        <div class="feedback-content">
+          <p class="feedback-heading">Stay Inspired</p>
+          <p class="feedback-description">
+            Subscribe to receive updates on new posts, exclusive offers, and
+            special content just for you.
+          </p>
+        </div>
+        <div class="form">
+          <input placeholder="E-mail" class="email" type="text" />
+          <button class="subscribe">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <!-- /* ---------------------------------- */ -->
+    <!-- /* --- FOOTER --- */ -->
+    <!-- /* ---------------------------------- */ -->
+    <div class="white-container">
+      <footer class="container footer-con container-white">
+        <div class="company">
+          <p class="footer-heading">
+            Handcrafted in <br />
+            København
+          </p>
+          <p class="footer-address">
+            Pilestæde 45, 1st Floor,<br />1112 Copenhagen, Denmark
+          </p>
+          <div class="footer-images">
+            <img
+              class="footer-image"
+              src="https://sites.kaliumtheme.com/elementor/furniture/wp-content/uploads/2025/05/fsc-logo.svg"
+            />
+            <img
+              class="footer-image"
+              src="https://sites.kaliumtheme.com/elementor/furniture/wp-content/uploads/2025/07/nordic-swan.svg"
+            />
+          </div>
+        </div>
+        <div class="footer-container">
+          <!-- Brand / Address -->
+
+          <!-- Shop Links -->
+          <div class="footer-col">
+            <p class="footer-title">Collections</p>
+            <ul class="footer-underline underline-on-hover-container">
+              <li><a href="#">Products</a></li>
+              <li><a href="#">New Arrivals</a></li>
+              <li><a href="#">Categories</a></li>
+              <li><a href="#">Gift Cards</a></li>
+              <li><a href="#">Bestseller Collection</a></li>
+            </ul>
+          </div>
+
+          <!-- Customer Care -->
+          <div class="footer-col">
+            <p class="footer-title">Customer Care</p>
+            <ul class="footer-underline underline-on-hover-container">
+              <li><a href="#">Customer Care</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Refunds & Returns</a></li>
+              <li><a href="#">Product Care</a></li>
+              <li><a href="#">Warranty</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- About -->
+          <div class="footer-col">
+            <p class="footer-title">About Us</p>
+            <ul class="footer-underline underline-on-hover-container">
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Certifications</a></li>
+              <li><a href="#">Journal</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Sustainability</a></li>
+            </ul>
+          </div>
+
+          <!-- Subscribe -->
+          <div class="footer-col">
+            <p class="footer-title">Stay Connected</p>
+            <p class="social-details">
+              Get exclusive updates, design tips, and previews of our newest
+              collections.
+            </p>
+            <div class="social-icons">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="social-icon"
+                viewBox="0 0 14 14"
+              >
+                <g
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M10.333 3.644a.25.25 0 1 1 0-.5m0 .5a.25.25 0 1 0 0-.5"
+                  />
+                  <path
+                    d="M.858 3.431A2.573 2.573 0 0 1 3.431.858h6.862a2.573 2.573 0 0 1 2.573 2.573v6.862a2.573 2.573 0 0 1-2.573 2.573H3.43a2.573 2.573 0 0 1-2.573-2.573V3.43Z"
+                  />
+                  <path
+                    d="M4.312 6.862a2.55 2.55 0 1 0 5.1 0a2.55 2.55 0 1 0-5.1 0"
+                  />
+                </g>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="social-icon"
+                viewBox="0 0 42 42"
+              >
+                <path
+                  fill="currentColor"
+                  d="M21 1c11.882.223 19.922 9.334 20 20c-.213 11.364-9.334 19.922-20 20a20.901 20.901 0 0 1-5.658-.82a28.23 28.23 0 0 0 1.123-2.01c.79-1.604 1.15-3.323 1.555-4.967c.173-.705.418-1.635.734-2.786c.346.662.972 1.238 1.88 1.728c2.366 1.152 5.3.77 7.407-.303c2.956-1.678 4.688-4.286 5.615-7.213c1.787-6.79-.517-13.314-6.674-15.94c-7.424-2.235-15.709.556-18.596 7.192c-1.26 4.436-1.186 10.13 3.196 11.987c.23.087.44.087.626 0c.412-.235.89-2.272.8-2.7c-.028-.13-.13-.31-.303-.54c-2.422-3.278-.946-8.158 1.317-10.604c3.85-3.306 9.84-3.842 13.37-.691c3.131 3.653 2.42 9.338.41 12.959c-1.11 1.77-2.6 3.109-4.6 3.133c-2.106-.047-3.694-1.83-3.154-3.846c.46-2.365 1.733-4.875 1.771-7.084c-.102-1.837-1.02-3.002-2.72-3.023c-2.714.342-3.81 2.879-3.846 5.184c.087 1.107.153 2.235.647 3.153a266.109 266.109 0 0 0-1.339 5.638c-.485 2.529-1.438 5.174-1.577 7.624a23.69 23.69 0 0 0-.02 2.246C5.553 35.802 1.041 28.937.997 21.002C1.216 9.457 10.334 1.079 21 1z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="social-icon"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669c1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                />
+              </svg>
+              <svg
+                class="social-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M1.27 0v24h8.05v-7.56h5.36V24h8.05V10.37L6.61 5.75V0H1.27Z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- /* ---------------------------------- */ -->
+      <!-- /* --- COPYRIGHT--- */ -->
+      <!-- /* ---------------------------------- */ -->
+      <div class="copyright">
+        <p>Furnistør ApS — CVR/VAT DK42168912 — Copenhagen, Denmark</p>
+        <p class="underline-on-hover-container">
+          © 2025 Furnistør – WordPress theme by
+          <span class="underline-on-hover-container">Laborator</span>
+        </p>
+      </div>
+    </div>
+    <a href="#" class="buy-button">
+      <button class="buy-button-content">
+        <svg
+          class="dashboard"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="M4 13h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1zm-1 7a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v4zm10 0a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-7a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v7zm1-10h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1z"
+          />
+        </svg>
+        <span>Buy Kalium 4</span>
+      </button>
+    </a>
+    <button id="scroll-to-top" class="scroll-to-top-button">
+      <svg
+        class="up-arrow"
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 32 32"
+      >
+        <path
+          fill="currentColor"
+          d="m16 4.094l-.72.687l-8.5 8.5l1.44 1.44L15 7.936V28h2V7.937l6.78 6.782l1.44-1.44l-8.5-8.5l-.72-.686z"
+        />
+      </svg>
+    </button>
+  </body>
+</html>

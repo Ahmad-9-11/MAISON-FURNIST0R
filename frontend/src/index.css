@@ -1,0 +1,176 @@
+@import "tailwindcss";
+
+/* Furnistør theme – exact palette from original HTML/CSS */
+@theme {
+  /* Colors */
+  --color-primary: #b87f53;
+  --color-text: #000000;
+  --color-bg: #ffffff;
+  --color-border: #eeeeee;
+  --color-hover: #cf5600;
+  --color-accent: #fc6b00;
+  --color-body: #e9e6e3;
+  --color-muted: #383733;
+  --color-subtle: #ccc9c1;
+  --color-card: #f3f1ef;
+  /* Fonts */
+  --font-sans: "Inter Tight", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Fraunces", ui-serif, Georgia, serif;
+  --font-heading: "Cormorant Garamond", "Playfair Display", ui-serif, Georgia, serif;
+  --color-gold: #b87f53;
+  --color-gold-light: #c99a6f;
+}
+
+@layer base {
+  * {
+    @apply border-border/20;
+  }
+  body {
+    @apply bg-[#e9e6e3] text-[#111] antialiased;
+    font-family: "Inter Tight", system-ui, sans-serif;
+  }
+  ::selection {
+    @apply bg-[#fc6b00] text-white;
+  }
+}
+
+/* Container: responsive padding, same max-width as original */
+.container-custom {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem 1.25rem;
+}
+@media (min-width: 640px) {
+  .container-custom { padding: 2rem 1.5rem; }
+}
+@media (min-width: 768px) {
+  .container-custom { padding: 3rem 2rem; }
+}
+@media (min-width: 1024px) {
+  .container-custom { padding: 4rem 3rem; }
+}
+@media (min-width: 1280px) {
+  .container-custom { padding: 64px; }
+}
+
+/* Product grid: responsive, generous gaps */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+@media (min-width: 640px) {
+  .products-grid { gap: 1.5rem; }
+}
+@media (min-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+  }
+}
+@media (min-width: 1280px) {
+  .products-grid { gap: 3rem; }
+}
+
+/* Shop by room grid */
+.shop-by-room-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+@media (min-width: 640px) {
+  .shop-by-room-grid { gap: 1.25rem; }
+}
+@media (min-width: 768px) {
+  .shop-by-room-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .shop-by-room-grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+  }
+}
+
+@keyframes move-lines {
+  from { background-position: 0 0; }
+  to { background-position: 20px 0; }
+}
+
+.font-heading {
+  font-family: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+}
+
+/* Navbar link: gold underline slide-in animation */
+.nav-link {
+  position: relative;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: #222;
+  text-decoration: none;
+  padding-bottom: 2px;
+  transition: color 0.2s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background: #b87f53;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.25s ease;
+}
+.nav-link:hover {
+  color: #b87f53;
+}
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Active state: always show gold underline */
+.nav-link-active {
+  position: relative;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: #b87f53;
+  text-decoration: none;
+  padding-bottom: 2px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.nav-link-active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background: #b87f53;
+  transform: scaleX(1);
+}
+
+/* Hide scrollbar for webkit while allowing scroll */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
